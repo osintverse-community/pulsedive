@@ -43,7 +43,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/pulsedive@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/pulsedive@sha256:2a7626065590ac3f9899059508949ec706224aec86e74badb5e6d2fe14c420f3
   platforms: [linux/amd64, linux/arm64]
   command: ["pulsedive", "--ip", "{ip}", "--domain", "{domain}", "--url", "{url}"]
   output_format: json
